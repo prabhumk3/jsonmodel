@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@gh-pages
 
     - name: Build
       run: |
@@ -22,7 +22,7 @@ jobs:
       env:
         REACT_APP_TOKEN:${{ secrets.REACT_APP_TOKEN }}
     - name: Deploy
-      uses: prabhumk3/jsonmodel@master
+      uses: prabhumk3/jsonmodel@gh-pages
       with:
         GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
         BRANCH: gh-pages
