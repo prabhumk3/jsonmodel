@@ -223,7 +223,7 @@ const handleAddObject = () => {
     console.log(prBranch);
     octokit
       .createPullRequest({
-        owner: "adobe",
+        owner: "prabhumk3",
         repo: "xdm",
         title: `${prTitle}`,
         body: `${prBody}`,

@@ -138,7 +138,7 @@ const Schema = () => {
         console.log(prUsername);
         octokit
             .createPullRequest({
-                owner: "adobe",
+                owner: "prabhumk3",
                 repo: "xdm",
                 title: `${prTitle} Created by ${prUsername}`,
                 body: `${prBody} `,
