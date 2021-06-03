@@ -92,7 +92,7 @@ const RightPanel = (props) => {
         })}
         octokit
         .createPullRequest({
-            owner: "prabhumk3",
+            owner: "prabhumk",
             repo: "xdm",
             title: `${prTitle} Created by ${prUsername}`,
             body: `${prBody} `,
