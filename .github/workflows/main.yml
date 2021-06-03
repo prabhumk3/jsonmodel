@@ -24,6 +24,6 @@ jobs:
     - name: Deploy
       uses: prabhumk3/github-pages-deploy-action@releases/v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
