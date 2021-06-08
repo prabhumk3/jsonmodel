@@ -20,10 +20,10 @@ jobs:
         npm install
         npm run-script build
       env:
-        REACT_APP_TOKEN:${{ secrets.REACT_APP_TOKEN_VALUE }}
+        REACT_APP_TOKEN:${{ env.REACT_APP_TOKEN_VALUE }}
     - name: Deploy
       uses: prabhumk3/jsonmodel
       with:
-        GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN_VALUE }}
+        GITHUB_TOKEN: ${{ env.REACT_APP_TOKEN_VALUE }}
         BRANCH: gh-pages
         FOLDER: build
