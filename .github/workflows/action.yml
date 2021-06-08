@@ -17,7 +17,7 @@ jobs:
     
     -  shell: bash
        env:
-        SUPER_SECRET: ${{ secrets.REACT_APP_TOKEN_VALUE }}
+        SUPER_SECRET: "StringSecret"
        run: |
         example-command "$SUPER_SECRET"
         
