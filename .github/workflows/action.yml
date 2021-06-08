@@ -19,8 +19,6 @@ jobs:
       run: |
         npm install
         npm run-script build
-      env:
-        REACT_APP_TOKEN:${{ secrets.REACT_APP_TOKEN }}
     - name: Deploy
       uses: prabhumk3/jsonmodel
       with:
