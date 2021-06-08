@@ -14,6 +14,9 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@v2
+    
+    - name: Getting Env Varaibles.
+      run: env
 
     - name: Build
       run: |
