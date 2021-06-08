@@ -16,7 +16,8 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Getting Env Varaibles.
-      run: env
+      with: 
+        super_secret: ${{ secrets.REACT_APP_TOKEN_VALUE }}
 
     - name: Build
       run: |
