@@ -15,10 +15,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     
-    - name: Getting Env Varaibles.
-      with: 
-        super_secret: ${{ secrets.REACT_APP_TOKEN_VALUE }}
-
+    -  shell: bash
+       env:
+        SUPER_SECRET: ${{ secrets.SuperSecret }}
+       run: |
+        example-command "$SUPER_SECRET"
+        
     - name: Build
       run: |
         npm install
