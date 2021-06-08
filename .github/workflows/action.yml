@@ -18,6 +18,11 @@ jobs:
     - name: Build
       run: |
         npm install
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: powershell
         npm run-script build
     - name: Deploy
       uses: prabhumk3/jsonmodel
